@@ -1,0 +1,50 @@
+/* Layout.css */
+
+.title{
+  padding-bottom: 10%;
+}
+
+.root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .withBackground {
+    background-image: url('../Images/salwa_dp.png'); /* Adjust the path based on your project structure */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .customDescription {
+    color: #db3434; /* Change the color to your desired style */
+    font-style: italic;
+    /* Add more custom styles as needed */
+  }
+  
+  .overlay {
+    overflow: hidden;
+  }
+  
+  .overlayText {
+    position: relative;
+  }
+  
+  .overlayLine {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #fff; /* Change the color to your desired style */
+    transform: translateY(-50%);
+  }
+  
+  .hidden {
+  display: none;
+}

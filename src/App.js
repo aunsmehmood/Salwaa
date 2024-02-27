@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import BeautifulLayout from "./components/Layout";
+import Parposal from "./components/Parposal";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Yes from "./components/Yes"; 
+import No from "./components/No";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<BeautifulLayout/>}/>
+          <Route path="/parposal" element={<Parposal/>}/>
+          <Route path="/yes" element={<Yes/>}/>
+          <Route path="/no" element={<No/>}/>
+        </Routes>
+      </BrowserRouter>
   );
 }
 
